@@ -1,6 +1,7 @@
 import 'package:app_order/controller/landing_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:badges/badges.dart' as badges;
 
 class LandingScreen extends StatelessWidget {
   LandingScreen({super.key});
@@ -18,22 +19,43 @@ class LandingScreen extends StatelessWidget {
             BottomNavigationBarItem(
               icon: Icon(Icons.home, color: Colors.black),
               label: "Home",
+              activeIcon: Icon(Icons.home, color: Colors.blueAccent),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.search, color: Colors.black),
               label: "Search",
+              activeIcon: Icon(Icons.search, color: Colors.blueAccent),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.favorite_border, color: Colors.black),
               label: "Favorite",
+              activeIcon: Icon(Icons.favorite_border, color: Colors.blueAccent),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.add_shopping_cart, color: Colors.black),
+              icon: badges.Badge(
+                badgeContent: Text(
+                  '0',
+                  style: TextStyle(fontSize: 12, color: Colors.white),
+                ),
+                child: Icon(Icons.shopping_cart, color: Colors.black),
+              ),
               label: "Cart",
+              activeIcon: badges.Badge(
+                badgeContent: Text(
+                  '0',
+                  style: TextStyle(fontSize: 12, color: Colors.white),
+                ),
+                child: Icon(Icons.shopping_cart, color: Colors.blueAccent),
+              ),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person, color: Colors.black),
+              label: "Profile",
+              activeIcon: Icon(Icons.person, color: Colors.blueAccent),
             )
           ],
           currentIndex: _index.value,
-          selectedItemColor: Colors.black,
+          selectedItemColor: Colors.blueAccent,
           onTap: (value) {
             _index.value = value;
           },
