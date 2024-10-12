@@ -12,4 +12,14 @@ class FontApp {
   static smallText16(var text) {
     return Text(text, style: const TextStyle(fontSize: 16));
   }
+
+  static smallText18(var text) {
+    return Text(
+      text,
+      style: const TextStyle(
+        fontSize: 18,
+        fontWeight: FontWeight.w600,
+      ),
+    );
+  }
 }

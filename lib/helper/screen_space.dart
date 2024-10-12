@@ -9,4 +9,18 @@ class ScreenSpace {
       bottom: buttom,
     );
   }
+
+  static spaceContent(
+      {double right = 10,
+      double left = 10,
+      double top = 8,
+      double buttom = 8}) {
+    return EdgeInsets.only(
+      right: right,
+      left: left,
+      top: top,
+      bottom: buttom,
+    );
+  }
+  
 }
