@@ -1,4 +1,4 @@
-import 'package:app_order/presentation/landing_screen.dart';
+import 'package:app_order/presentation/screen/landing_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
