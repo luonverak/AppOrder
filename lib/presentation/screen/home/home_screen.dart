@@ -79,12 +79,12 @@ class HomeScreen extends StatelessWidget {
                       padding: ScreenSpace.spaceAround(top: 10),
                       child: GestureDetector(
                           onTap: () {
-                            if (statusController.active.value) {
-                              statusController.inactiveStatus();
-                            } else {
-                              statusController.activeStutus();
-                              listCategory[index].status.value =
-                                  statusController.active.value;
+                            for (int i = 0; i < listCategory.length; i++) {
+                              if (i == index) {
+                                listCategory[index].status.value = true;
+                              } else {
+                                listCategory[i].status.value = false;
+                              }
                             }
                           },
                           child: Obx(
