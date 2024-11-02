@@ -8,9 +8,9 @@ import 'package:get/get.dart';
 class LandingScreenController extends GetxController {
   final List listScreen =  [
     HomeScreen(),
-    SearchScreen(),
-    FavoriteScreen(),
+    const SearchScreen(),
+    const FavoriteScreen(),
     CartScreen(),
-    ProfileScreen()
+    const ProfileScreen()
   ];
 }
