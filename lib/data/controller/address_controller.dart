@@ -44,8 +44,9 @@ class AddressController extends GetxController {
 
   Future<void> _getCurrentAddress(Position position) async {
     await placemarkFromCoordinates(
-            _currentPosition!.latitude, _currentPosition!.longitude)
-        .then((List<Placemark> placemarks) {
+      _currentPosition!.latitude,
+      _currentPosition!.longitude,
+    ).then((List<Placemark> placemarks) {
       Placemark place = placemarks[0];
       currentAddress.value = '${place.street}, ${place.subLocality}';
     }).catchError((e) {

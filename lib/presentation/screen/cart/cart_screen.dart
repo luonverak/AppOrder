@@ -1,5 +1,5 @@
-import 'package:app_order/core/data/controller/product_controller.dart';
-import 'package:app_order/core/data/model/product_model.dart';
+import 'package:app_order/data/controller/product_controller.dart';
+import 'package:app_order/data/model/product_model.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';

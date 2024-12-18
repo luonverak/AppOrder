@@ -1,4 +1,4 @@
-import 'package:app_order/core/data/model/slide_model.dart';
+import 'package:app_order/data/model/slide_model.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
